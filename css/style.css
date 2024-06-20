@@ -1,0 +1,44 @@
+body {
+    background-color: #f8edc8;
+}
+header h1, header p {
+    margin: 0;
+}
+.header{
+    text-align: right;
+    background-color: #d9e779;
+    padding: 60px 200px;
+}
+.navbar{
+    background-color: aqua;
+
+}
+.navbar-nav .nav-link {
+    color: #000;
+}
+.nav-item{
+    padding-left: 35px;
+}
+.navbar-nav .nav-link:hover {
+    color: #555;
+}
+
+.box {
+    background-color: #d9e779;
+    margin-top: 40px;
+    padding: 10px;
+    border: 1px double rgb(16, 163, 55);
+    border-radius: 0 15px 0 15px;
+}
+
+.content{
+    margin-top: 35px;
+}
+
+footer{
+    background-color: #d9e779;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 100px;
+}
