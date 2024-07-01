@@ -1,6 +1,10 @@
 body {
     background-color: #f8edc8;
 }
+.mother-content{
+    margin: 30px 220px;
+    border: 1px solid red;
+}
 header h1, header p {
     margin: 0;
 }
