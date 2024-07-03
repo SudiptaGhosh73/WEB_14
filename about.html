@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation Form</title>
+    <style>
+        .weak {
+            color: red;
+        }
+        .medium {
+            color: yellow;
+        }
+        .strong {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form id="pass">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="message"></span>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('password').addEventListener('input', function() {
+            var password = document.getElementById('password').value;
+            var message = document.getElementById('message');
+
+            if (password.length < 6) {
+                message.textContent = 'Password is weak';
+                message.className = 'weak';
+            } else if (password.length <= 8) {
+                message.textContent = 'Password is medium';
+                message.className = 'medium';
+            } else {
+                message.textContent = 'Password is strong';
+                message.className = 'strong';
+            }
+        });
+    </script>
+</body>
+</html>
